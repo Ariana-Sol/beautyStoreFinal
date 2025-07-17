@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+    <div>
+    
+    <nav class="lastresmarias"> 
+        <div class="iconos">
+    <img src="imagenes/003-simbolo-de-la-interfaz-de-busqueda.png" alt="Lupa de búsqueda">
+    <img src="imagenes/001-corazn.png" alt="Favoritos">
+    <!-- Agregar dentro de tu .iconos -->
+<div class="carrito-icono">
+  🛒 <span id="contador-carrito">0</span>
+</div>
+
+
+
+  </div>
+
+  <div class="logos">
+    <img src="imagenes/lastresmarias.png" alt="Logo Las tres marias">
+  </div>
+
+
+</nav>
+
+
+<div class="productos">
+  <a href="#">Maquillaje</a>
+  <a href="#">Accesorios</a>
+  <a href="#">Skin Care</a>
+</div>
+
+
+          
+       
+    </div>
+
+    <header>
+
+        <img src="imagenes/Banner.png" alt="">
+
+    </header>
+
+
+
+
+
+    <main>
+
+
+        <section class="Tienda" id="contenedor-productos">
+
+</section>
+
+
+        <section class="testimonios">
+  <div class="testimonios-header">
+    <img src="imagenes/CrueltyFree.png" alt="Logo cruelty-free">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>Escuchá lo que dicen nuestras clientas sobre nuestra marca ética y libre de crueldad.</p>
+  </div>
+
+  <div class="testimonios-contenedor">
+    <div class="testimonio">
+      <p>"Me encanta saber que mis productos favoritos no dañan a ningún animal. ¡100% recomendado!"</p>
+      <h4>- Camila R.</h4>
+    </div>
+
+    <div class="testimonio">
+      <p>"Amo la calidad y la filosofía de la marca. Es genial sentirse bella sin comprometer valores."</p>
+      <h4>- Sofía M.</h4>
+    </div>
+
+    <div class="testimonio">
+      <p>"Desde que probé sus productos cruelty-free, no volví a cambiar. Además tienen envíos rapidísimos."</p>
+      <h4>- Lara B.</h4>
+    </div>
+  </div>
+</section>
+
+        
+
+
+    </main>
+
+
+<footer>
+        <ul>
+            <img src="imagenes/003-logotipo-de-instagram.png" alt="">
+            <img src="imagenes/002-tik-tok.png" alt="">
+            <img src="imagenes/x.png" alt="">
+            <img src="imagenes/004-whatsapp.png" alt="">
+
+
+        </ul>
+
+
+         <h3>Dónde estamos</h3>
+  <div style="width: 100%; max-width: 600px; margin: auto;">
+    <iframe 
+      src="https://maps.app.goo.gl/sEekcn5v6EsUJLJE9" 
+      width="100%" 
+      height="200" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+
+        <div>
+            <h3>
+                Contactanos!
+            </h3>
+            <form action="" method=""  >
+                <input type="text" name="Nombre" id="Nombre" placeholder="Escribi tu Nombre"   >
+                <input type="email" name="email" id="email" placeholder="Escribi tu email"  >
+                <textarea name="Mensaje" id="mensaje" cols="30" rows="10 " placeholder="Me interesa un producto... "    >
+                </textarea>
+                <button type="submit" > Enviar </button>
+            </form>
+
+        </div>
+
+        
+
+
+        
+
+    </footer>
+
+
+
+<div id="carrito-contenedor" class="carrito-popup oculto">
+  <h3>Carrito</h3>
+  <ul id="lista-carrito"></ul>
+  <p>Total: $<span id="total-carrito">0</span></p>
+</div>
+
+
+
+
+
+   <script src="productos.js"></script>
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="css/carrito.css" />
+</head>
+<body>
+
+
+
+  <section class="carrito-pagina">
+    <h2>Tu carrito de compras</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <p class="total-carrito">Total: $<span id="total-carrito">0</span>
+    </p>
+
+    <button class="boton-vaciar" id="vaciar-carrito">Vaciar carrito
+
+    </button>
+
+    <a href="index.html" style="display:block;text-align:center;margin-top:20px;color:#d81b60;">
+      ⬅️ Seguir comprando</a>
+  </section>
+
+  <script>
+
+    const listaCarrito = document.getElementById("lista-carrito");
+    
+    const totalCarrito = document.getElementById("total-carrito");
+    const botonVaciar = document.getElementById("vaciar-carrito");
+
+    function cargarCarrito() {
+      const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      listaCarrito.innerHTML = "";
+      let total = 0;
+
+      carrito.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.nombre} - $${item.precio}`;
+        listaCarrito.appendChild(li);
+        total += item.precio;
+      });
+
+      totalCarrito.textContent = total.toLocaleString();
+    }
+
+    botonVaciar.addEventListener("click", () => {
+      if (confirm("¿Estás seguro de que deseas vaciar el carrito?")) {
+        localStorage.removeItem("carrito");
+        cargarCarrito();
+      }
+    });
+
+    window.addEventListener("DOMContentLoaded", cargarCarrito);
+  </script>
+</body>
+</html>

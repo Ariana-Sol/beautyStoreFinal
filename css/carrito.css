@@ -1,0 +1,50 @@
+/* Estilo para pagina carrito.html */
+.carrito-pagina {
+  padding: 40px;
+  background-color: #fff0f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.carrito-pagina h2 {
+  text-align: center;
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+.carrito-pagina ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.carrito-pagina li {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.total-carrito {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.boton-vaciar {
+  display: block;
+  margin: 20px auto;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton-vaciar:hover {
+  background-color: #e91e63;
+}
