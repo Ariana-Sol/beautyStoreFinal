@@ -43,11 +43,17 @@
        
     </div>
 
-    <header>
+   <header class="slider-container">
+   <div class="slider" id="slider">
 
-        <img src="imagenes/Banner.png" alt="">
+    <img src="imagenes/Banner.png" class="slide" alt="Banner 30% de descuento">
+    <img src="imagenes/makeup.jpg" class="slide" alt="Banner Make up">
+   </div>
 
-    </header>
+   <button class="slider-btn prev" onclick="cambiarSlide(-1)"> ❮</button>
+   <button class="slider-btn next" onclick="cambiarSlide(1)">❯</button>
+   </header>
+
 
 
 
@@ -120,7 +126,7 @@
             <h3>
                 Contactanos!
             </h3>
-            <form action="" method=""  >
+            <form action="https://formspree.io/f/mkgzgjrr" method="post"  >
                 <input type="text" name="Nombre" id="Nombre" placeholder="Escribi tu Nombre"   >
                 <input type="email" name="email" id="email" placeholder="Escribi tu email"  >
                 <textarea name="Mensaje" id="mensaje" cols="30" rows="10 " placeholder="Me interesa un producto... "    >
